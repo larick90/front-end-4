@@ -1,0 +1,21 @@
+hr {
+    border: 0;
+    height: 2px;
+    background: gold;
+}
+
+.some-class {
+    color: red;
+}
+
+.some-ol {
+    color: #338004;
+}
+
+p a {
+    color: #d553ff;
+}
+
+ol li + li {
+    color: blueviolet;
+}
