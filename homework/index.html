@@ -32,37 +32,64 @@ html body p
 body > p
 <span lang="uk">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 span
-lang
+[lang="uk"]
+[lang]
 html span
 html body span
 body > span
 <ul>
-  ul
-  html ul
-  html body ul
-  body > ul
   <li id="line-id" class="some-li" style="color: salmon">Lorem ipsum dolor sit amet.</li>
   li
   ul li
+  ul > li
   #line-id
   .some-li
-
+  [id="line-id"]
+  [id]
+  [class^="some"]
   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+  .some-li + li
   <li><span>Lorem ipsum dolor sit.</span></li>
   <li>Lorem <span>ipsum</span> dolor sit amet.</li>
 </ul>
+ul
+html ul
+html body ul
+body > ul
 <hr>
 <p class="some-class">Lorem ipsum dolor <span style="color: darkorange">sit amet,</span> consectetur adipisicing elit. Consequatur.</p>
-<p>Lorem <a href="https://html5book.ru/">ipsum</a> dolor sit.</p>
+p
+html p
+html body p
+body > p
+.some-class
+    span
+    p span
+    p > span
+<p>Lorem <a href="https://html5book.ru">ipsum</a> dolor sit.</p>
+p a
+a
+[href$=".ru"]
+a[href*="html"]
 <p>Lorem ipsum dolor sit amet, consectetur.</p>
 <span>Lorem ipsum dolor.</span>
 <div><h3>Lorem ipsum dolor sit:</h3>
+  h3
+  div h3
 <ol class="some-ol">
   <li>Lorem ipsum dolor sit amet.</li>
   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
   <li><span>Lorem ipsum dolor sit.</span></li>
   <li>Lorem <span>ipsum</span> dolor sit amet.</li>
 </ol>
+  .some-ol
+  ol
+  div h3 + ol
+  div > ol
 </div>
+div
+html div
+html body div
+body > div
 </body>
 </html>
