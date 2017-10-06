@@ -1,0 +1,33 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 300;
+    white-space: pre;
+    color: #999;
+}
+
+a {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #666666;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.73;
+    color: #333;
+}
+
+a:hover {
+    color: orangered;
+}
