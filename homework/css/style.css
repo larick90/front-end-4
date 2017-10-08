@@ -1,10 +1,63 @@
-body {
+/*
+styles in rem
+ */
+
+html {
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+div {
+    margin: 30px;
+    width: 810px;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+span {
+    font-size: .93rem;
+    font-weight: 300;
+    white-space: pre;
+    color: #999;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.first-p {
+    margin-top: 3.33rem;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.73;
+    margin-top: 1.73rem;
+    color: #333;
+}
+
+/*
+styles in px
+*/
+/*
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div {
+    margin: 30px;
+    width: 810px;
 }
 
 h1 {
     font-size: 24px;
-    font-weight: 400;
 }
 
 span {
@@ -15,19 +68,23 @@ span {
 }
 
 a {
-    font-size: 14px;
-    font-weight: 300;
     text-decoration: none;
-    color: #666666;
+    color: #666;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.first-p {
+    margin-top: 50px;
 }
 
 p {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.73;
+    margin-top: 26px;
     color: #333;
 }
-
-a:hover {
-    color: orangered;
-}
+ */
