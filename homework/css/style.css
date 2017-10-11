@@ -40,15 +40,10 @@ html {
     height: 168px;
 }
 
-.some-logo {
+.some-header {
     display: inline-block;
-    padding-top: 30px;
-}
-
-.some-search {
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
+    vertical-align: top;
+    margin-top: 30px;
 }
 
 .search {
@@ -76,22 +71,30 @@ html {
 }
 
 .page-header {
+    position: relative;
     background-color: #e7e7e7;
     width: 1170px;
     height: 117px;
     margin: 30px auto;
+    padding: 44px 20px 0 30px;
+    box-sizing: border-box;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.some-title-page {
-    position: relative;
-    top: 40px;
-    left: 28px;
-    font-size: 2rem;
-    color: #232323;
+.page-header a {
+    text-decoration: none;
+    color: #999999
 }
 
-.page-header a {
-    color: #999999
+.page-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+.page-way {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: pre;
 }
