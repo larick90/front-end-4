@@ -1,25 +1,33 @@
 html {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     color: #282828;
-    font-style: 14px;
+    font-size: 14px;
     line-height: 18px;
     background: #555;
 }
 body {
     width: 920px;
     margin: auto;
+    counter-reset: pages;
 }
 
-ol {
+p {
     margin: 0;
-    padding: 0;
-}
-
-li {
     padding: 13px 0;
     background: #fff;
+    counter-increment: pages;
 }
 
-li:nth-child(even) {
+p:nth-child(even) {
     background: #ccc;
+}
+
+p::before {
+    content: counter(pages);
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    color: #fff;
+    background: #ff5353;
+    width: 50px;
+    float: left;
 }
