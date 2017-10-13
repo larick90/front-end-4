@@ -26,8 +26,10 @@ p::before {
     content: counter(pages);
     font-family: "Times New Roman", serif;
     font-size: 24px;
+    text-align: center;
     color: #fff;
     background: #ff5353;
     width: 50px;
+    line-height: 60px;
     float: left;
 }
