@@ -30,6 +30,8 @@ p::before {
     color: #fff;
     background: #ff5353;
     width: 50px;
-    line-height: 60px;
+    line-height: 80px;
     float: left;
+    position: relative;
+    bottom: 13px;
 }
