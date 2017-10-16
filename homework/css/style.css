@@ -1,27 +1,25 @@
 html {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: .94rem;
 }
 
 body {
-
+    width: 1170px;
+    margin: 0 auto;
 }
 .top-bar {
+    position: relative;
     background: #2b2b2b;
     width: 100%;
     height: 35px;
+    font-weight: 300;
 }
 
 .top-bar-content {
     padding-top: 10px;
     color: #7f7f7f;
     font-size: .93rem;
-    font-weight: 300;
     box-sizing: border-box;
-}
-
-.some-phone {
-    font-weight: 300;
 }
 
 .accaunt {
@@ -31,73 +29,114 @@ body {
     color: #3b3b3b;
 }
 
-.some-a {
-    font-weight: 400;
+.accaunt a {
+    color: #666;
     text-decoration: none;
-    color: #666666;
 }
 
-.header {
+.wrapper {
     background: #232323;
     width: 100%;
     height: 168px;
 }
 
 .some-header {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 30px;
+    position: relative;
+    padding-top: 30px;
+    display: flex;
 }
 
 .search {
-    position: relative;
-    left: 31px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
     background: transparent;
     border: 1px solid #323232;
-    padding-right: 15px;
-    padding-left: 25px;
     width: 275px;
     height: 46px;
+    padding-top: 10px;
     box-sizing: border-box;
 }
 
-.some-menu {
-    margin-right: 50px;
-    font-size: 1.07rem;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
+.search input {
+    position: absolute;
+    left: 25px;
+    background: transparent;
+    border: none;
 }
 
-.some-bag {
-    display: inline-block;
+.search-btn {
+    position: absolute;
+    right: 15px;
+    background: transparent;
+    border: none;
+}
+
+.menu {
+    text-decoration: none;
+    color: #999999;
+    margin-right: 50px;
+}
+
+a:hover {
+    color: #be926f;
+}
+
+.bag-btn {
+    position: absolute;
+    right: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.bag-btn::after {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    content: '2';
+    font-size: .8rem;
+    color: #232323;
+    background: #be926f;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
 }
 
 .page-header {
     position: relative;
     background-color: #e7e7e7;
-    width: 1170px;
     height: 117px;
-    margin: 30px auto;
-    padding: 44px 20px 0 30px;
+    margin-top: 30px;
     box-sizing: border-box;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.page-header a {
-    text-decoration: none;
-    color: #999999
-}
-
-.page-title {
+h1 {
     display: inline-block;
-    vertical-align: middle;
+    position: absolute;
+    top: 44px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
     font-size: 2rem;
+    font-weight: 400;
 }
 
 .page-way {
     display: inline-block;
-    vertical-align: middle;
+    position: absolute;
+    top: 52px;
+    right: 20px;
     white-space: pre;
+}
+
+.page-way a {
+    color: #999;
+    text-decoration: none;
+}
+
+.map {
+    margin-top: 30px;
 }
