@@ -12,6 +12,7 @@ body {
 }
 
 p {
+    position: relative;
     margin: 0;
     padding: 13px 0;
     background: #fff;
@@ -30,8 +31,11 @@ p::before {
     color: #fff;
     background: #ff5353;
     width: 50px;
-    line-height: 80px;
-    float: left;
-    position: relative;
-    bottom: 13px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+p:nth-child(even)::before {
+    background: #a33535;
 }
