@@ -11,37 +11,28 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="top-bar">
-  <div class="top-bar-content">
-    <span class="some-phone">(+123) 456 789</span>
-    <span class="accaunt"><a href="#">Log in</a>   or   <a href="#">Register</a>
-    </span>
-  </div>
+<div class="page-wrapper">
+  <header class="header">
+    <div class="header-top">
+      <div class="conteiner clearfix">
+        <a href="tel:+123456789" class="hedear-tel">(+123) 456 789</a>
+        <div class="header-user">
+          <a href="@">Log in</a><span>or</span><a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-middle">
+        <a href="/" class="header-logo">
+          <img src="image/Logo.png" width="166" height="49" alt="logo">
+        </a>
+        <form action="#" method="get">
+          <input type="search" placeholder="Search Products…" class="header-search">
+          <button type="submit"></button>
+        </form>
+      </div>
+    </div>
+  </header>
 </div>
-<div class="wrapper">
-  <div class="some-header">
-    <img class="logotype" src="image/Logo.png" width="166" height="49" alt="Logo" title="Logo">
-    <form class="search">
-      <input class="search-field" type="search" placeholder="Search Products...">
-      <button class="search-btn" type="button"><img src="image/Search.svg" width="16" height="16" alt="Search"></button>
-    </form>
-  </div>
-  <div class="some-header">
-    <nav>
-      <a class="menu" href="#">Home</a>
-      <a class="menu" href="#">Living room</a>
-      <a class="menu" href="#">Office</a>
-      <a class="menu" href="#">Bedroom</a>
-      <a class="menu" href="#">Blog</a>
-      <a class="menu" href="#">Contact</a>
-    </nav>
-    <button class="bag-btn"><img src="image/Bag.svg" width="17" height="22" alt="Bag"></button>
-  </div>
-</div>
-<div class="page-header">
-  <h1>Contact Us</h1>
-  <span class="page-way"><a href="#">Home  /</a>  contact</span>
-</div>
-<img class="map" src="image/map.png" width="1170" height="629" alt="Map">
 </body>
 </html>
