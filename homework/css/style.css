@@ -2,7 +2,7 @@ html {
     font-family: Arial, sans-serif;
     color: #282828;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.286;
     background: #555;
 }
 body {
@@ -11,19 +11,25 @@ body {
     counter-reset: pages;
 }
 
-p {
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
     position: relative;
     margin: 0;
-    padding: 13px 0;
+    padding: 13px 13px 13px 63px;
     background: #fff;
     counter-increment: pages;
 }
 
-p:nth-child(even) {
+li:nth-child(even) {
     background: #ccc;
 }
 
-p::before {
+li::before {
     content: counter(pages);
     font-family: "Times New Roman", serif;
     font-size: 24px;
@@ -34,9 +40,10 @@ p::before {
     position: absolute;
     top: 0;
     bottom: 0;
+    left: 0;
     float: left;
 }
 
-p:nth-child(even)::before {
+li:nth-child(even)::before {
     background: #a33535;
 }
