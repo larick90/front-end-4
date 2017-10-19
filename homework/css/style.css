@@ -10,15 +10,16 @@ input,
 button {
     outline: none;
 }
+
 .conteiner {
     margin: 0 auto;
     width: 1170px;
 }
 
 .clearfix::after {
-    display: table;
+    display: block;
     clear: both;
-    content: '';
+    content: "";
 }
 
 .header {
@@ -26,25 +27,26 @@ button {
 }
 
 .header-top {
+    line-height: 1.714;
     background-color: #2b2b2b;
 }
 
-.hedear-tel,
+.header-tel,
 .header-user {
-    display: inline-block;
     padding: 5px 0;
 }
 
-.header-user {
-    float: right;
-}
-.hedear-tel {
+.header-tel {
     display: inline-block;
-    font-size: .875rem;
     font-weight: 300;
-    line-height: 1.5;
+    font-size: .875rem;
     color: #7f7f7f;
-    text-decoration: none
+    text-decoration: none;
+}
+
+.header-user {
+    font-weight: 400;
+    float: right;
 }
 
 .header-user a {
@@ -53,38 +55,56 @@ button {
     text-decoration: none;
 }
 
-.header-user a :hover {
+.header-user a:hover{
     text-decoration: underline;
 }
 
+
 .header-user span {
     font-size: .75rem;
-    margin: 0 7px;
+    margin: 0 12px;
     color: #3b3b3b;
 }
 
-.header-middle {
+.header-logo,
+.header-middle form {
+    margin: 30px 0 26px;
+}
+
+.header-logo {
     display: inline-block;
 }
 
-.header-search {
-    border: none;
+.header-middle form {
+    border: 1px solid #323232;
     float: right;
+}
+
+.header-search {
+    padding: 10px 20px;
+    border: none;
     background-color: transparent;
 }
 
 .header-search,
 .header-search::placeholder {
-    font-size: .8125;
+    font-size: .8125rem;
+    font-weight: 300;
     line-height: 1.85;
-    font-weight: 200;
     color: #666;
 }
 
 .header-middle button {
+    cursor: pointer;
+    padding: 0;
     width: 54px;
     height: 44px;
     border: none;
-    padding: 0;
-    background: transparent url("../image/Search.svg") center center no-repeat;
+    background: transparent url("../image/search.png") center center no-repeat;
+}
+
+.header-search,
+.header-middle button {
+    display: inline-block;
+    vertical-align: top;
 }
