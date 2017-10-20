@@ -81,7 +81,8 @@ button {
 }
 
 .header-search {
-    padding: 10px 20px;
+    width: 200px;
+    padding: 10px 4px 10px 20px;
     border: none;
     background-color: transparent;
 }
@@ -107,4 +108,62 @@ button {
 .header-middle button {
     display: inline-block;
     vertical-align: top;
+}
+
+.header-nav {
+    padding-bottom: 20px;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
+
+.header-nav li{
+    display: inline-block;
+}
+
+.header-nav li + li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.header-nav a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-nav .active,
+.header-nav a:hover {
+    color: #be926f;
+}
+
+.header-cart {
+    padding: 10px;
+    float: right;
+    width: 17px;
+    height: 22px;
+    background: url(../image/bag.png) center center no-repeat;
+}
+
+.header-cart::after {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    content: "2";
+    display: inline-block;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    font-size: .75rem;
+    line-height: 18px;
+    color: #232323;
+    text-align: center;
+    background-color: #be926f;
+    text-decoration: none;
 }
