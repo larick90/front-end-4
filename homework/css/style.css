@@ -213,3 +213,55 @@ button {
         padding-left: 17px;
     }
 }
+
+/* page title ---------------------------------------------*/
+
+.page-title {
+    margin-top: 30px;
+    padding: 45px 20px 45px 30px;
+    background: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.875rem;
+    line-height: 0.8;
+    font-weight: 400;
+    color: #232323;
+}
+
+.page-way {
+    float: right;
+    font-size: .875rem;
+    line-height: 1.714;
+    font-weight: 400;
+    color: #999;
+}
+
+.page-way a {
+    text-decoration: none;
+    color: #999;
+}
+
+.page-way a:hover {
+    text-decoration: underline;
+}
+
+.page-way span {
+    color: #666;
+}
+
+@media (max-width: 480px) {
+    .page-way {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .page-title h1 {
+        display: block;
+        text-align: center;
+    }
+}
