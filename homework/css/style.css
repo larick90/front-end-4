@@ -41,7 +41,9 @@ li::before {
     top: 0;
     bottom: 0;
     left: 0;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 li:nth-child(even)::before {
