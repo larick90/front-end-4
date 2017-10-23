@@ -203,14 +203,19 @@ button {
         text-align: center;
         width: 100%;
     }
+    .header-nav ul {
+        margin: 0;
+    }
     .header-nav li {
         text-align: center;
     }
     .header-nav a {
         display: block;
     }
-    .header-nav li:first-child {
-        padding-left: 17px;
+    .header-bag {
+        display: block;
+        float: none;
+        margin: 0 auto;
     }
 }
 
