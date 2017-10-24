@@ -1,0 +1,155 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    min-width: 320px;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.header {
+    background-color: #232323;
+}
+
+/* Header top ---------------------------------------------------*/
+
+.header-top {
+    background-color: #2b2b2b;
+}
+
+.header-tel a {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.714;
+    color: #7f7f7f;
+}
+
+.header-user {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.714;
+    text-align: right;
+    color: #3b3b3b;
+}
+
+.header-user a {
+    color: #666;
+}
+
+.header-user span {
+    font-size: .857rem;
+    margin: 0 10px;
+}
+
+.header-tel,
+.header-user {
+    margin: 6px 0;
+}
+
+/* Header middle ---------------------------------------------------*/
+
+.header-logo,
+.header-form {
+    margin: 30px 0;
+}
+
+.header-form {
+    float: right;
+    width: 300px;
+    border: 1px solid #323232;
+}
+
+.header-search {
+    font-weight: 300;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 5px 60px 5px 20px;
+    color: #fff;
+}
+
+.header-search::placeholder {
+    font-size: .928rem;
+    font-weight: 300;
+    line-height: 1.846;
+    color: #666;
+}
+
+.header-form button {
+    float: right;
+    cursor: pointer;
+    padding: 0;
+    width: 54px;
+    height: 44px;
+    border: none;
+    background: transparent url("../image/search.png") center center no-repeat;
+}
+
+.header-search,
+.header-form button {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Header bottom ---------------------------------------------------*/
+
+.header-bottom {
+    margin: 30px 0;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
+
+.header-nav li {
+    display: inline-block;
+}
+
+.header-nav li + li {
+    margin-left: 10px;
+}
+
+.header-nav a {
+    padding: 10px 20px;
+    font-size: 1.143rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.header-nav .active,
+.header-nav a:hover {
+    color: #be926f;
+    text-decoration: none;
+}
+
+.header-bag {
+    float: right;
+    width: 17px;
+    height: 22px;
+    background: url("../image/bag.png") center center no-repeat;
+}
+
+.header-bag::after {
+    position: relative;
+    bottom: 9px;
+    left: 9px;
+    content: "2";
+    display: inline-block;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    font-size: .75rem;
+    line-height: 18px;
+    color: #232323;
+    text-align: center;
+    background-color: #be926f;
+    text-decoration: none;
+}
