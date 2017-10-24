@@ -181,6 +181,9 @@ button {
 }
 
 @media (max-width: 480px) {
+    .header-tel {
+        padding-bottom: 0;
+    }
     .header-tel, .header-user {
         display: block;
         float: none;
