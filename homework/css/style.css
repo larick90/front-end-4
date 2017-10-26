@@ -1,0 +1,253 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-width: 320px;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.conteiner {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+}
+
+/* header styles ---------------------------------------------*/
+
+.header {
+    background-color: #232323;
+}
+
+/* header top ---------------------------------------------*/
+
+.header-top {
+    line-height: 1.714;
+    background-color: #2b2b2b;
+}
+
+.header-top .conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-tel,
+.header-user {
+    padding: 5px 0;
+}
+
+.header-tel {
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.95;
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
+.header-user {
+    font-weight: 400;
+}
+
+.header-user a {
+    font-size: .875rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.header-user a:hover{
+    text-decoration: underline;
+}
+
+
+.header-user span {
+    font-size: .75rem;
+    margin: 0 12px;
+    color: #3b3b3b;
+}
+
+/* header middle ---------------------------------------------*/
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 30px;
+}
+
+.header-middle form {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border: 1px solid #323232;
+}
+
+.header-search {
+    width: 100%;
+    padding: 10px 4px 10px 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.header-search,
+.header-search::placeholder {
+    font-size: .8125rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #666;
+}
+
+.header-middle button {
+    cursor: pointer;
+    padding: 0;
+    width: 54px;
+    height: 44px;
+    border: none;
+    background: transparent url("../image/search.png") center center no-repeat;
+}
+
+.header-search,
+.header-middle button {
+}
+
+/* header bottom ---------------------------------------------*/
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.header-nav {
+
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
+
+.header-nav a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 660px) {
+    .header-nav ul {
+        flex-direction: column;
+    }
+    .header-nav a {
+        display: block;
+    }
+}
+
+.header-nav .active,
+.header-nav a:hover {
+    color: #be926f;
+}
+
+.header-bag {
+    padding: 10px;
+    width: 17px;
+    height: 22px;
+    background: url(../image/bag.png) center center no-repeat;
+    text-decoration: none;
+}
+
+.header-bag::after {
+    position: relative;
+    top: -8px;
+    left: 8px;
+    content: "2";
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    font-size: .75rem;
+    line-height: 18px;
+    color: #232323;
+    text-align: center;
+    background-color: #be926f;
+}
+
+/* page title ---------------------------------------------*/
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 45px 20px 45px 30px;
+    background: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: 1.875rem;
+    line-height: 0.8;
+    font-weight: 400;
+    color: #232323;
+}
+
+.page-way {
+    font-size: .875rem;
+    line-height: 1.714;
+    font-weight: 400;
+    color: #999;
+}
+
+.page-way a {
+    text-decoration: none;
+    color: #999;
+}
+
+.page-way a:hover {
+    text-decoration: underline;
+}
+
+.page-way span {
+    color: #666;
+}
+
+@media (max-width: 480px) {
+    .header-top .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-tel {
+        padding-bottom: 0;
+    }
+    .header-middle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-middle form {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .header-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-nav ul {
+        align-items: center;
+        margin-left: 0;
+    }
+    .page-title {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .page-way {
+        margin-bottom: 20px;
+    }
+}
