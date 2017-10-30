@@ -113,6 +113,76 @@ button {
 .header-middle button {
 }
 
+/* modal-window ------------------------------------------------------*/
+
+.modal-window {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+    background: #ebebeb;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 2000;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-window h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #232323;
+    margin: 0 0 15px;
+}
+
+.cart-table {
+    width: 100%;
+    border: 1px solid #232323;
+    margin-bottom: 10px;
+}
+
+.cart-table th {
+    text-align: left;
+    background-color: #bebebe;
+}
+
+.cart-table th,
+.cart-table td {
+    line-height: 1.5;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.cart-suma {
+    font-weight: 600;
+    text-align: right;
+}
+
+.modal-window button {
+    cursor: pointer;
+    display: block;
+    width: 130px;
+    height: 40px;
+    border: none;
+    background: #be926f;
+    color: #232323;
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto;
+    transition: background .5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.modal-window button:hover {
+    background: #8A6A50;
+}
+
 /* header bottom ---------------------------------------------*/
 
 .header-bottom {
@@ -250,4 +320,54 @@ button {
     .page-way {
         margin-bottom: 20px;
     }
+}
+
+@keyframes clock {
+    0%{
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.colock {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 3px solid #be926f;
+    background: #E7E7E7;
+    margin: 30px auto;
+}
+
+.hour,
+.min,
+.sec {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 25%;
+    width: 4px;
+    border-radius: 2px;
+    background: #be926f;
+    animation: clock 43200s steps(12) infinite;
+    transform-origin: 50% 2px;
+    transform: rotate(-180deg);
+}
+
+.min {
+    height: 30%;
+    animation: clock 3600s steps(60) infinite;
+}
+
+.sec {
+    height: 40%;
+    animation: clock 60s steps(60) infinite;
+}
+
+.colock:hover .hour,
+.colock:hover .min,
+.colock:hover .sec {
+    animation-play-state: paused;
 }
