@@ -127,7 +127,7 @@ button {
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     z-index: 2000;
-    visibility: hidden;
+    /*visibility: hidden;*/
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -145,6 +145,7 @@ button {
     width: 100%;
     border: 1px solid #232323;
     margin-bottom: 10px;
+    border-spacing: 0;
 }
 
 .cart-table th {
