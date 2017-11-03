@@ -115,23 +115,34 @@ button {
 
 /* modal-window ------------------------------------------------------*/
 
-.modal-window {
-    display: block;
+/*.blur {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}*/
+
+.cart {
+    visibility: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
-    padding: 20px;
     width: 600px;
     height: auto;
-    background: #ebebeb;
     box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     z-index: 2000;
-    /*visibility: hidden;*/
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-window {
+    padding: 20px;
+    background: #ebebeb;
 }
 
 .modal-window h3 {
@@ -165,7 +176,7 @@ button {
     text-align: right;
 }
 
-.modal-window button {
+.button-order {
     cursor: pointer;
     display: block;
     width: 130px;
@@ -175,13 +186,20 @@ button {
     color: #232323;
     font-size: .8rem;
     font-weight: 600;
+    line-height: 40px;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     margin: 0 auto;
-    transition: background .5s cubic-bezier(0.4, 0, 1, 1);
+    transition: background .2s cubic-bezier(0.4, 0, 1, 1);
 }
 
-.modal-window button:hover {
+.button-order:hover {
     background: #8A6A50;
+}
+
+.cart:target {
+    visibility: visible;
 }
 
 /* header bottom ---------------------------------------------*/
@@ -371,4 +389,11 @@ button {
 .colock:hover .min,
 .colock:hover .sec {
     animation-play-state: paused;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }

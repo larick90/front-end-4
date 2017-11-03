@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="script/script.js">
 </head>
 <body>
 <div class="page-wrapper">
-  <!-- Begin Header -->
-  <header class="header">
-    <!-- Begin Header Top -->
-    <div class="header-top">
-      <div class="conteiner">
-        <a href="tel:+123456789" class="header-tel">(+123) 456 789</a>
-        <div class="header-user">
-          <a href="#">Log in</a><span>or</span><a href="#">Register</a>
+    <!-- Begin Header -->
+    <header class="header">
+        <!-- Begin Header Top -->
+        <div class="header-top">
+            <div class="conteiner">
+                <a href="tel:+123456789" class="header-tel">(+123) 456 789</a>
+                <div class="header-user">
+                    <a href="#">Log in</a><span>or</span><a href="#">Register</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- End Header Top -->
+        <!-- End Header Top -->
+        <div class="conteiner">
+            <!-- Begin Header Middle -->
+            <div class="header-middle">
+                <a href="/" class="header-logo">
+                    <img src="image/logo.png" width="166" height="49" alt="logo">
+                </a>
+                <form action="#" method="get">
+                    <input type="search" placeholder="Search Products…" class="header-search">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <!-- End Header Middle -->
+            <!-- Begin Header Bottom -->
+            <div class="header-bottom">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Living room</a></li>
+                        <li><a href="#">Office</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#popup1" class="header-bag"></a>
+            </div>
+            <!-- End Header Bottom -->
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Begin Page Title -->
     <div class="conteiner">
-      <!-- Begin Header Middle -->
-      <div class="header-middle">
-        <a href="/" class="header-logo">
-          <img src="image/logo.png" width="166" height="49" alt="logo">
-        </a>
-        <form action="#" method="get">
-          <input type="search" placeholder="Search Products…" class="header-search">
-          <button type="submit"></button>
-        </form>
-      </div>
-      <!-- End Header Middle -->
-      <!-- Begin Header Bottom -->
-      <div class="header-bottom">
-        <nav class="header-nav">
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Living room</a></li>
-            <li><a href="#">Office</a></li>
-            <li><a href="#">Bedroom</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="header-bag"></a>
-      </div>
-      <!-- End Header Bottom -->
+        <div class="page-title">
+            <h1>Contact us</h1>
+            <span class="page-way"><a href="#">Home</a> / <span>Contact</span></span>
+        </div>
     </div>
-  </header>
-  <!-- End Header -->
-  <!-- Begin Page Title -->
-   <div class="conteiner">
-    <div class="page-title">
-      <h1>Contact us</h1>
-      <span class="page-way"><a href="#">Home</a> / <span>Contact</span></span>
+    <!-- End Page Title -->
+    <div class="blur">
+        <div id="popup1" class="cart">
+            <div class="modal-window">
+                <h3>Cart</h3>
+                <table class="cart-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bag</td>
+                        <td>$49.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Shoes</td>
+                        <td>$89.00</td>
+                    </tr>
+                    <tr class="cart-suma">
+                        <td></td>
+                        <td></td>
+                        <td>$138.00</td>
+                    </tr>
+                </table>
+                <a href="#" class="button-order">Order Now</a>
+            </div>
+        </div>
     </div>
-   </div>
-  <!-- End Page Title -->
-  <div id="popup1">
-    <div class="modal-window">
-      <h3>Cart</h3>
-      <table class="cart-table">
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Bag</td>
-          <td>$49.00</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Shoes</td>
-          <td>$89.00</td>
-        </tr>
-        <tr class="cart-suma">
-          <td></td>
-          <td></td>
-          <td>$138.00</td>
-        </tr>
-      </table>
-      <button type="submit" class="anim">Order Now</button>
+    <div class="colock">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
     </div>
-  </div>
-  <div class="colock">
-    <div class="hour"></div>
-    <div class="min"></div>
-    <div class="sec"></div>
-  </div>
 </div>
 </body>
 </html>
