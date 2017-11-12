@@ -21,27 +21,36 @@ var r;
 
 // Меньше число -----------------------------------------------------------
 function findMin(m, n) {
-    if (m < n) {
-        console.log('Меньше число', m);
-    } else if (m > n) {
-        console.log('Меньше число', n);
-    } else console.log('Числа рівні');
-    // return Math.min(m, n);
+    if (arguments.length) {
+        if (m < n) {
+            console.log('Меньше число', m);
+        } else if (m > n) {
+            console.log('Меньше число', n);
+        } else console.log('Числа рівні');
+    } else {
+        alert('Введіть числа для порівняння');
+    }
 }
 
 // Підняття до степені -----------------------------------------------------------
 function findPow(m, n) {
-    if ( n !== undefined ) {
+    if (arguments.length === 2) {
         r = Math.pow(m, n);
         console.log('Число "m" в степені "n" = ', r);
-    } else {
+    } else if (arguments.length === 1) {
         r = m * m;
         console.log('Число "m" в степені "m" = ', r);
+    } else {
+        alert('Введіть числа для підняття до степені');
     }
 }
 
 // Середнє арифметичне -----------------------------------------------------------
 function findMid(m, n) {
-    r = (m + n) / 2;
-    console.log('----', 'Середнє арифметичне =', r);
+    if (arguments.length === 2) {
+        r = (m + n) / 2;
+        console.log('----', 'Середнє арифметичне =', r);
+    } else {
+        alert('Введіть 2 числа');
+    }
 }
