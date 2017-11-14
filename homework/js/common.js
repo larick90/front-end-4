@@ -15,31 +15,42 @@ function findX(a, b, c) {
     }
 }
 
-var m;
-var n;
-var r;
 
 // Меньше число -----------------------------------------------------------
 function findMin(m, n) {
     if (arguments.length) {
-        if (m < n) {
-            console.log('Меньше число', m);
-        } else if (m > n) {
-            console.log('Меньше число', n);
-        } else console.log('Числа рівні');
+        if (m <= n) {
+            return m;
+        } else {
+            return n;
+        }
     } else {
         alert('Введіть числа для порівняння');
     }
 }
 
 // Підняття до степені -----------------------------------------------------------
+/*
 function findPow(m, n) {
     if (arguments.length === 2) {
-        r = Math.pow(m, n);
-        console.log('Число "m" в степені "n" = ', r);
+        return Math.pow(m, n);
+
     } else if (arguments.length === 1) {
-        r = m * m;
-        console.log('Число "m" в степені "m" = ', r);
+        return m * m;
+    } else {
+        alert('Введіть числа для підняття до степені');
+    }
+}
+*/
+
+function findPow(m, n) {
+    if (arguments.length === 2) {
+        for (var i=0; i < n; i++) {
+            return m *= m;
+        }
+
+    } else if (arguments.length === 1) {
+        return m * m;
     } else {
         alert('Введіть числа для підняття до степені');
     }
@@ -48,8 +59,7 @@ function findPow(m, n) {
 // Середнє арифметичне -----------------------------------------------------------
 function findMid(m, n) {
     if (arguments.length === 2) {
-        r = (m + n) / 2;
-        console.log('----', 'Середнє арифметичне =', r);
+        return (m + n) / 2;
     } else {
         alert('Введіть 2 числа');
     }
