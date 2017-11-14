@@ -45,10 +45,10 @@ function findPow(m, n) {
 
 function findPow(m, n) {
     if (arguments.length === 2) {
-        for (var i=0; i < n; i++) {
-            return m *= m;
-        }
-
+        var r = m;
+        for (var i=1; i < n; i++) {
+            m = r * m;
+        } return m;
     } else if (arguments.length === 1) {
         return m * m;
     } else {
