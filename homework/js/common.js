@@ -36,3 +36,25 @@ function sumObj(codeObj) {
         sum += codeObj[key];
     } return sum;
 }
+
+// 3 Метод бульбашки
+
+var data = [1, 2, 7, 10, 6, 9, 3, 8, 5, 4];
+
+
+function buble(data) {
+    var dataLeng = data.length - 1;
+
+    for ( var key = 0; key < dataLeng; key++ ) {
+
+        for ( var i = 0; i < dataLeng; i++ ) {
+
+            if ( data[i] > data[i + 1] ) {
+                var rise = data [i];
+                data [i] = data [i + 1];
+                data [i + 1] = rise;
+            }
+        }
+    }
+    return data;
+}
