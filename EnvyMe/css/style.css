@@ -1,0 +1,82 @@
+html {
+    font-family: "Ubuntu", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #242424;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.conteiner {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1170px;
+}
+
+/* header top ----------------------------------------------------*/
+.header-top .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-search {
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #d3ebf0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 90px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.cart {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.cart img {
+    margin-bottom: -4px;
+    margin-right: 5px;
+}
+
+/* main menu -----------------------------------------------------*/
+.header-bottom {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.header-menu {
+    display: flex;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 68px;
+}
+
+.header-menu li + li {
+    margin-left: 34px;
+}
+
+.menu-sale {
+    font-weight: 700;
+}
