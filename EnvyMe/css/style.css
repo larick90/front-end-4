@@ -123,6 +123,13 @@ ul {
     background: url("../image/mainBanner1.png") center center no-repeat;
     box-sizing: border-box;
 }
+.slide-2 {
+    padding: 40px;
+    width: 1170px;
+    height: 450px;
+    background: url("../image/mainBanner2.png") center center no-repeat;
+    box-sizing: border-box;
+}
 
 .slide-title {
     display: block;
@@ -135,33 +142,59 @@ ul {
     color: #fff;
 }
 
-.slide-1 a {
+.slide-1 a,
+.slide-2 a {
     display: flex;
     align-items: center;
     font-size: 1rem;
 }
 
-.slide-1 a img {
+.slide-1 a img,
+.slide-2 a img {
     margin-left: 10px;
 }
 
-.slide-1::before {
+/*.slide-1::after {
+    content: '';
+    display: block;
     position: relative;
     left: -40px;
-    top: -58px;
-    content: '';
+    top: -40px;
     border-bottom: 450px solid #D2EBEF;
-    border-left: 350px solid transparent;
+    border-left: 0 solid transparent;
     border-right: 250px solid transparent;
-    height: 90px;
-    width: 20px;
+    height: 0;
+    width: 350px;
+}*/
+
+hr {
+    border: none;
+    color: #d9d9d9;
+    background-color: #d9d9d9;
+    height: 1px;
 }
 
-#trapezoid {
-    margin-left: 50px;
-    border-bottom: 300px solid #D2EBEF;
-    border-left: 0 solid transparent;
-    border-right: 200px solid transparent;
-    height: 0;
-    width: 200px;
+h2 {
+    font-size: 2.5rem;
+    color: #242424;
+    line-height: 1.6;
+}
+
+h2::before {
+    position: relative;
+    top: 45px;
+    left: 65px;
+    margin-left: -65px;
+    content: '';
+    border-top: 50px solid #D2EBEF;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    z-index: -2;
+}
+
+.test {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    background-color: #00ceb9;
 }
