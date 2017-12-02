@@ -1,5 +1,10 @@
 "use strict";
 
 $(function(){
-    $('.test').slick()
+    $('.slider').slick({
+        autoplay: true,
+        // autoplaySpeed: 1500,
+        arrows: false,
+        dots: true,
+    });
 });
