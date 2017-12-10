@@ -3,8 +3,14 @@
 $(function(){
     $('.slider').slick({
         autoplay: true,
-        // autoplaySpeed: 1500,
         arrows: false,
-        dots: true,
+        dots: true
+    });
+    $('.rec-list').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false
     });
 });
