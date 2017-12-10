@@ -1,0 +1,707 @@
+html {
+    font-family: "Ubuntu", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #242424;
+    background-color: #f2f2f2;
+}
+
+input,
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1170px;
+}
+
+/* header top ----------------------------------------------------*/
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-search,
+.user {
+    width: 280px;
+}
+
+.header-search button {
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #d3ebf0;
+}
+
+.logo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 90px;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.user {
+    text-align: right;
+}
+
+.cart {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.cart img {
+    margin-bottom: -4px;
+    margin-right: 5px;
+}
+
+.cart::before {
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    right: -30px;
+    content: "2";
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: .75rem;
+    line-height: 15px;
+    color: #232323;
+    text-align: center;
+    background-color: #fedad0;
+}
+
+/* main menu -----------------------------------------------------*/
+.header-bottom {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.header-menu {
+    display: flex;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 68px;
+}
+
+.header-menu li + li {
+    margin-left: 34px;
+}
+
+.menu-sale {
+    font-weight: 700;
+}
+
+.header-menu li a {
+    position: relative;
+    z-index: 5;
+}
+
+.header-menu li a::before {
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFDAD2;
+    content: '';
+    z-index: -2;
+}
+
+.header-menu li a:hover::before {
+    display: inline;
+}
+
+/* Main slider ----------------------------------------------------*/
+
+.slider {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.slide-1 {
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    height: 450px;
+    background: url("../image/mainBanner1.png") center center no-repeat;
+    box-sizing: border-box;
+}
+.slide-2 {
+    position: relative;
+    padding: 40px;
+    width: 100%;
+    height: 450px;
+    background: url("../image/mainBanner2.png") center center no-repeat;
+    box-sizing: border-box;
+}
+
+.slide-title {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    padding: 140px 0 100px;
+    font-size: 5rem;
+    color: #242424;
+    z-index: 10;
+}
+
+.slide-title span {
+    font-weight: 300;
+    color: #fff;
+}
+
+.slide-1 a,
+.slide-2 a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+.slide-1:hover a,
+.slide-2:hover a {
+    left: 20px;
+}
+
+.slide-1 a img,
+.slide-2 a img {
+    position: absolute;
+    left: 85px;
+    top: -6px;
+}
+
+.slide-1::after,
+.slide-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 450px solid #D2EBEF;
+    border-left: 0 solid transparent;
+    border-right: 250px solid transparent;
+    height: 0;
+    width: 350px;
+    z-index: 5;
+}
+
+.slide-1:hover::after,
+.slide-2:hover::after {
+    width: 450px;
+}
+
+hr {
+    border: none;
+    color: #d9d9d9;
+    background-color: #d9d9d9;
+    height: 1px;
+}
+
+/* Brand logos ------------------------------------------------*/
+
+.brand-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.brand-logos li a {
+    display: inline-block;
+    height: 70px;
+    background-image: url("../image/logos-sprite.png");
+}
+
+.partner-1 {
+    width: 90px;
+    background-position: 0 0;
+}
+.partner-2 {
+    width: 92px;
+    background-position: -150px 0;
+    background-repeat: no-repeat;
+}
+.partner-3 {
+    width: 96px;
+    background-position: -297px 1px;
+}
+.partner-4 {
+    width: 93px;
+    background-position: -450px 0;
+    background-repeat: no-repeat;
+}
+.partner-5 {
+    width: 95px;
+    background-position: -600px 0;
+}
+.partner-6 {
+    width: 96px;
+    background-position: -751px 0;
+}
+.partner-7 {
+    width: 115px;
+    background-position: -887px 0;
+}
+.partner-8 {
+    width: 68px;
+    background-position: -1066px 0;
+    background-repeat: no-repeat;
+}
+
+/* Trending items ---------------------------------------------*/
+
+.trending-wrapper {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #242424;
+    line-height: 1.6;
+}
+
+h2 span {
+    font-weight: 300;
+}
+
+h2::before {
+    position: relative;
+    top: 45px;
+    left: 65px;
+    margin-left: -65px;
+    content: '';
+    border-top: 50px solid #D2EBEF;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    z-index: -2;
+}
+
+.trending-wrapper h2::before {
+    content: '';
+    border-top: 50px solid #FFDAD2;
+}
+
+.trending-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.items-column-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 770px;
+}
+
+.items-column-1 a {
+    margin-top: 30px;
+}
+
+.item-3 {
+    margin-left: 30px;
+}
+
+.items-column-2 {
+    width: 370px;
+}
+
+.item-1 {
+    position: relative;
+    padding: 200px 0 30px 30px;
+    width: 770px;
+    height: 370px;
+    background: url("../image/item1.jpg") center center no-repeat;
+    box-sizing: border-box;
+    color: #242424;
+}
+.item-1 span {
+    margin: 10px 0;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+.item-1 .price {
+    margin-bottom: 0;
+}
+
+.item-1 a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+.item-1:hover a {
+    left: 20px;
+}
+
+.item-1 a img {
+    position: absolute;
+    left: 65px;
+    top: -6px;
+}
+
+.item-1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 370px solid #D2EBEF;
+    border-left: 0 solid transparent;
+    border-right: 100px solid transparent;
+    height: 0;
+    width: 170px;
+    z-index: 5;
+}
+
+.item-1:hover::after {
+    width: 230px;
+}
+
+.item-2,
+.item-3,
+.item-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 370px;
+    height: 370px;
+    color: #fff;
+    text-shadow: 0.5px 0.866px 0.99px rgba(0, 0, 0, 0.3);
+}
+
+.item-3 {
+    justify-content: flex-start;
+}
+
+.item-2 div,
+.item-3 div,
+.item-4 div {
+    margin: 30px;
+}
+
+.price {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.item-2 {
+    background: url("../image/item2.jpg") center center no-repeat;
+}
+
+.item-3 {
+    background: url("../image/item3.jpg") center center no-repeat;
+}
+
+.item-4 {
+    width: 370px;
+    height: 770px;
+    background: url("../image/item4.jpg") center center no-repeat;
+}
+
+.item-2:hover,
+.item-3:hover,
+.item-4:hover {
+    background-size: 105% 105%;
+}
+
+/* AppStore ------------------------------------------------------*/
+
+.app-wrapper {
+    margin: 70px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 210px;
+    border: 1px solid #d9d9d9;
+    background: url("../image/app_bg.jpg") left top repeat;
+    box-sizing: border-box;
+}
+
+.android-phone {
+    margin-right: 40px;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.app-wrapper span {
+    align-self: flex-end;
+}
+
+.app-wrapper span img {
+    margin-bottom: -3px;
+}
+
+.playmarket {
+    display: block;
+    margin-bottom: 30px;
+    width: 170px;
+    height: 55px;
+    background: url("../image/appmarket-sprite.png") center top no-repeat;
+}
+
+.appstore {
+    display: block;
+    width: 170px;
+    height: 53px;
+    background: url("../image/appmarket-sprite.png") center bottom no-repeat;
+}
+
+/* Recommended items ---------------------------------------------*/
+
+.rec-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.rec-list li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 270px;
+}
+
+.product-img {
+    display: block;
+    position: relative;
+    width: 270px;
+    height: 350px;
+    margin-bottom: 14px;
+}
+
+.product-img::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    font-weight: 300;
+    font-size: .8125rem;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #242424;
+    border-radius: 50%;
+    content: 'SALE!';
+}
+
+.product-name {
+    display: inline-block;
+    width: 230px;
+    margin-right: 19px;
+    text-transform: uppercase;
+}
+
+.prev-price {
+    color: #808080;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-right: 24px;
+}
+
+.current-price {
+    color: #545454;
+    font-weight: 400;
+}
+
+.favorite-icon {
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    background: url("../image/favorite-ic.svg") center center no-repeat;
+}
+
+.product-1 .product-img {
+    background: url("../image/product-1.png") center center no-repeat;
+}
+
+.product-2 .product-img {
+    background: url("../image/product-2.png") center center no-repeat;
+}
+
+.product-3 .product-img {
+    background: url("../image/product-3.png") center center no-repeat;
+}
+
+.product-4 .product-img {
+    background: url("../image/product-4.png") center center no-repeat;
+}
+
+.product-5 .product-img {
+    background: url("../image/product-5.png") center center no-repeat;
+}
+
+.product-6 .product-img {
+    background: url("../image/product-6.png") center center no-repeat;
+}
+
+.rec-list li .product-img::after {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+    content: '+';
+}
+
+.rec-list li .product-img:hover::after {
+    display: block;
+}
+
+/* Footer ------------------------------------------------------*/
+
+footer {
+    margin-top: 70px;
+    padding: 40px 0 30px;
+    border-top: 1px solid #d9d9d9;
+    background-color: #fff;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    line-height: 1.286;
+}
+
+.footer-top li {
+    display: block;
+    width: 270px;
+}
+
+.footer-top li b {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.footer-top li a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    display: block;
+    margin-top: 30px;
+    font-size: .75rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.social-media,
+.footer-pay,
+.footer-apps {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.social-media li a {
+    width: 28px;
+    height: 28px;
+    background-image: url("../image/social-sprite.png");
+}
+
+.social-2 {
+    background-position: -37px 0;
+}
+.social-3 {
+    background-position: -74px 0;
+}
+.social-4 {
+    background-position: -111px 0;
+}
+.social-5 {
+    background-position: -148px 0;
+}
+.social-6 {
+    background-position: -185px 0;
+}
+.social-7 {
+    background-position: -222px 0;
+}
+
+.footer-partners {
+    width: 250px;
+}
+
+.footer-pay li a {
+    width: 50px;
+    height: 32px;
+    background-image: url("../image/pay-sprite.png");
+}
+
+.mcard {
+    margin-left: -60px;
+    background-position: -80px 0;
+}
+
+.other-pay,
+.m-version {
+    width: 250px;
+}
+
+.footer-top li div a {
+    display: inline;
+    text-decoration: underline;
+}
+
+.footer-apps li a {
+    width: 104px;
+    height: 32px;
+    background-image: url("../image/store_market_footer.png");
+}
+
+.f-appstore {
+    margin-left: -10px;
+    background-position: -136px 0;
+}
