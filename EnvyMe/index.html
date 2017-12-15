@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <!--<link rel="stylesheet" href="css/slick-theme.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,11 +17,12 @@
     <header>
         <div class="header-top">
             <div class="container">
-                <div class="header-search">
+                <form class="header-search">
                     <button type="submit">
                         <img src="image/search_ic.svg" width="20px" height="20px" alt="search">
                     </button>
-                </div>
+                    <input type="search" class="header-search-in" placeholder="Search">
+                </form>
                 <a href="/"class="logo">Envy<span>Me</span></a>
                 <div class="user">
                     <a href="#">Войти</a>
@@ -33,7 +34,22 @@
             <div class="header-bottom">
                 <div class="container">
                     <ul class="header-menu">
-                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Новинки</a>
+                            <div class="submenu-new">
+                                <div>
+                                    <h3>Новинки</h3>
+                                    <ul class="sub-new-clothes">Одежда
+                                        <li>Верхняя одежда</li>
+                                        <li>Платья и сарафаны</li>
+                                        <li>Джемперы и кардиганы</li>
+                                        <li>Футболки</li>
+                                        <li>Нижнее белье</li>
+                                        <li>Все категории</li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="ad-product">Джинсы MANGO</a>
+                            </div>
+                        </li>
                         <li><a href="#">Стиль жизни</a></li>
                         <li><a href="#">Одежда</a></li>
                         <li><a href="#">Обувь</a></li>

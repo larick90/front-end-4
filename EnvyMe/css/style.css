@@ -46,6 +46,11 @@ ul {
     border-radius: 50%;
     border: none;
     background: #d3ebf0;
+    transition: background .2s ease-in-out;
+}
+
+.header-search button:hover {
+    background: #fedad0;
 }
 
 .logo {
@@ -53,6 +58,23 @@ ul {
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 90px;
+}
+
+.header-search-in::placeholder {
+    color: #c7c7c7;
+}
+
+.header-search-in {
+    border: none;
+    margin-left: 10px;
+    padding: 0;
+    width: 220px;
+    border-bottom: 1px solid #242424;
+    background: none;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 2;
+    color: #505050;
 }
 
 .logo span {
@@ -118,7 +140,7 @@ ul {
 }
 
 .header-menu li a::before {
-    display: none;
+    display: inline;
     position: absolute;
     top: -5px;
     left: 50%;
@@ -129,10 +151,58 @@ ul {
     background: #FFDAD2;
     content: '';
     z-index: -2;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
 }
 
 .header-menu li a:hover::before {
-    display: inline;
+    opacity: 100;
+}
+
+/* submenu ---------------------------------------------------------*/
+
+.submenu-new {
+    /*display: none;*/
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background: #FFF;
+    box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.2);
+}
+
+.submenu-new div {
+    padding: 30px 0;
+}
+
+h3 {
+    margin: 0;
+    padding-left: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.6;
+}
+
+.sub-new-clothes {
+    padding-left: 30px;
+    font-size: .875rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.sub-new-clothes li {
+    line-height: 2;
+    text-transform: none;
+    color: #242424;
+}
+
+.sub-new-clothes li:last-child {
+    color: #808080;
+}
+
+.sub-new-clothes li + li {
+    margin-left: 0;
 }
 
 /* Main slider ----------------------------------------------------*/
@@ -178,9 +248,11 @@ ul {
 .slide-1 a,
 .slide-2 a {
     position: relative;
+    left: 0;
     display: flex;
     align-items: center;
     font-size: 1rem;
+    transition: left .2s ease-in-out;
     z-index: 10;
 }
 
@@ -208,6 +280,7 @@ ul {
     border-right: 250px solid transparent;
     height: 0;
     width: 350px;
+    transition: width .2s ease-in-out;
     z-index: 5;
 }
 
@@ -234,6 +307,7 @@ hr {
     display: inline-block;
     height: 70px;
     background-image: url("../image/logos-sprite.png");
+    opacity: 100;
 }
 
 .partner-1 {
@@ -356,10 +430,12 @@ h2::before {
 
 .item-1 a {
     position: relative;
+    left: 0;
     display: flex;
     align-items: center;
     font-size: 1rem;
     z-index: 10;
+    transition: left .2s ease-in-out;
 }
 
 .item-1:hover a {
@@ -384,6 +460,7 @@ h2::before {
     height: 0;
     width: 170px;
     z-index: 5;
+    transition: width .2s ease-in-out;
 }
 
 .item-1:hover::after {
@@ -430,6 +507,13 @@ h2::before {
     width: 370px;
     height: 770px;
     background: url("../image/item4.jpg") center center no-repeat;
+}
+
+.item-2,
+.item-3,
+.item-4 {
+    background-size: 100% 100%;
+    transition: background-size .2s ease-in-out;
 }
 
 .item-2:hover,
@@ -577,7 +661,7 @@ h2::before {
 }
 
 .rec-list li .product-img::after {
-    display: none;
+    display: block;
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -589,10 +673,12 @@ h2::before {
     line-height: 35px;
     text-align: center;
     content: '+';
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
 }
 
 .rec-list li .product-img:hover::after {
-    display: block;
+    opacity: 100;
 }
 
 /* Footer ------------------------------------------------------*/
