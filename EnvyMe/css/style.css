@@ -65,6 +65,7 @@ ul {
 }
 
 .header-search-in {
+    display: none;
     border: none;
     margin-left: 10px;
     padding: 0;
@@ -120,10 +121,12 @@ ul {
 }
 
 .header-menu {
+    position: relative;
     display: flex;
     font-size: .875rem;
     font-weight: 300;
     line-height: 68px;
+    z-index: 20;
 }
 
 .header-menu li + li {
@@ -162,20 +165,32 @@ ul {
 /* submenu ---------------------------------------------------------*/
 
 .submenu-new {
-    /*display: none;*/
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    /*display: flex;*/
     justify-content: space-between;
-    width: 100%;
-    height: 300px;
+    width: 1170px;
+    height: 295px;
     background: #FFF;
     box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.2);
 }
 
 .submenu-new div {
-    padding: 30px 0;
+    padding-top: 20px;
+    width: 75%;
+}
+
+.submenu-new div div {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 h3 {
-    margin: 0;
+    display: block;
+    margin: 0 0 10px 0;
     padding-left: 30px;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
@@ -183,26 +198,42 @@ h3 {
     line-height: 1.6;
 }
 
-.sub-new-clothes {
+.sub-new-clothes,
+.sub-new-shoes,
+.sub-new-accessorise {
     padding-left: 30px;
     font-size: .875rem;
     font-weight: 300;
+}
+
+.submenu-new li:first-child {
+    margin-bottom: 5px;
     text-transform: uppercase;
     color: #808080;
 }
 
-.sub-new-clothes li {
+.sub-new-clothes li,
+.sub-new-shoes li,
+.sub-new-accessorise li {
     line-height: 2;
     text-transform: none;
     color: #242424;
 }
 
-.sub-new-clothes li:last-child {
+.submenu-new li:last-child {
     color: #808080;
 }
 
-.sub-new-clothes li + li {
+.sub-new-clothes li + li,
+.sub-new-shoes li + li,
+.sub-new-accessorise li + li {
     margin-left: 0;
+}
+
+.ad-product {
+    width: 270px;
+    height: 295px;
+    background: url("../image/ad-product-1.png") center center no-repeat;
 }
 
 /* Main slider ----------------------------------------------------*/
@@ -301,10 +332,12 @@ hr {
 .brand-logos {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .brand-logos li a {
     display: inline-block;
+    padding: 0 10px;
     height: 70px;
     background-image: url("../image/logos-sprite.png");
     opacity: 100;
@@ -568,6 +601,31 @@ h2::before {
     background: url("../image/appmarket-sprite.png") center bottom no-repeat;
 }
 
+@media (max-width: 850px) {
+    .app-wrapper {
+        padding: 20px 0 0 0;
+        flex-direction: column-reverse;
+        height: 500px;
+    }
+    .app-title {
+        text-align: center;
+    }
+    .app-wrapper span {
+        align-self: center;
+    }
+    .app-wrapper span img {
+        margin-bottom: -7px;
+    }
+    .app-wrapper li {
+        margin: 0 15px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .appstore {
+        margin-top: 1px;
+    }
+}
+
 /* Recommended items ---------------------------------------------*/
 
 .rec-list {
@@ -577,6 +635,10 @@ h2::before {
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 40px;
+}
+
+@media (max-width: 1080px) {
+
 }
 
 .rec-list li {
@@ -695,8 +757,15 @@ footer {
 .footer-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     line-height: 1.286;
+}
+
+@media (max-width: 1080px) {
+    .footer-top {
+        justify-content: space-around;
+    }
 }
 
 .footer-top li {
