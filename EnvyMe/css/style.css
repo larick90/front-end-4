@@ -162,6 +162,7 @@ ul {
     opacity: 100;
 }
 
+
 /* submenu ---------------------------------------------------------*/
 
 .submenu-new {
@@ -175,6 +176,10 @@ ul {
     height: 295px;
     background: #FFF;
     box-shadow: 0 5px 14px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sub-new:hover .submenu-new {
+    display: flex;
 }
 
 .submenu-new div {
