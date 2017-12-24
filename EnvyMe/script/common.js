@@ -19,19 +19,19 @@ $(function(){
         autoplay: true,
         arrows: false,
         responsive: [{
-            breakpoint: 1080,
+            breakpoint: 1120,
             settings: {
                 slidesToShow: 3
             }
         },
             {
-                breakpoint: 820,
+                breakpoint: 850,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 550,
+                breakpoint: 580,
                 settings: {
                     slidesToShow: 1
                 }
