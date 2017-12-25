@@ -162,14 +162,48 @@ ul {
 .header-menu {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     font-size: .875rem;
     font-weight: 300;
     line-height: 68px;
     z-index: 20;
 }
 
+@media (max-width: 725px) {
+    .header-menu {
+        justify-content: center;
+    }
+}
+
 .header-menu li + li {
     margin-left: 34px;
+}
+
+.burger-menu {
+    display: none;
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    background-image: url("../image/burger-menu.svg");
+}
+
+@media (max-width: 380px) {
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        line-height: 3;
+        text-align: center;
+    }
+    .header-menu li + li {
+        margin-left: 0;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
+
+.menu-flex {
+    display: flex;
 }
 
 .menu-sale {
@@ -364,6 +398,35 @@ h3 {
     width: 450px;
 }
 
+@media (max-width: 850px) {
+    .slide-title {
+        font-size: 3.2rem;
+    }
+    .slide-1::after,
+    .slide-2::after {
+        width: 200px;
+    }
+
+    .slide-1:hover::after,
+    .slide-2:hover::after {
+        width: 250px;
+    }
+}
+
+@media (max-width: 620px) {
+    .slide-1 a,
+    .slide-2 a {
+        top: 90%;
+    }
+    .slide-title {
+        display: none;
+    }
+    .slide-1::after,
+    .slide-2::after {
+        display: none;
+    }
+}
+
 hr {
     border: none;
     color: #d9d9d9;
@@ -456,6 +519,12 @@ h2::before {
 .trending-wrapper h2::before {
     content: '';
     border-top: 50px solid #FFDAD2;
+}
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: 1.8rem;
+    }
 }
 
 .trending-items {
@@ -692,12 +761,12 @@ h2::before {
     line-height: 1.5;
 }
 
-.rec-list li {
+/* .rec-list li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     width: 270px;
-}
+} */
 
 .product-img {
     display: block;
@@ -792,6 +861,12 @@ h2::before {
 
 .rec-list li .product-img:hover::after {
     opacity: 100;
+}
+
+@media (max-width: 1120px) {
+    .product-img {
+        margin: 0 auto;
+    }
 }
 
 /* Footer ------------------------------------------------------*/

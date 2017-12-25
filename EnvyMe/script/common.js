@@ -7,6 +7,12 @@ $(function(){
         $('.header-search-in').toggle();
     });
 
+    //burger-menu
+    $('.burger-menu').on('click', function (ev) {
+        ev.preventDefault();
+        $('.header-menu').toggle();
+    });
+
     //sliders
     $('.slider').slick({
         autoplay: true,
@@ -16,7 +22,8 @@ $(function(){
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
+        autoplay: false,
         arrows: false,
         responsive: [{
             breakpoint: 1120,
